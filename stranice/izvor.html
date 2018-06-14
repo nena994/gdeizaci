@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gde izaci</title>
+        <meta charset="UTF-8">
+        <link href="stilStranice.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    <body>
+        <h1> Brvnara Izvor</h1>
+
+        <div class="row">
+                   <div class="column left" >
+                    <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 7 </div>
+                      <img src="sajt/izvor/1.jpg" alt="Brvnara Izvor" width="400" height="300">
+                  
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 7</div>
+                      <img src="sajt/izvor/2.jpg" alt="Brvnara Izvor" width="400" height="300">
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 7</div>
+                     <img src="sajt/izvor/3.jpg" alt="Brvnara Izvor" width="400" height="300">
+                    </div>
+                    
+                        <div class="mySlides fade">
+                      <div class="numbertext">4 / 7</div>
+                      <img src="sajt/izvor/4.jpg" alt="Brvnara Izvor" width="400" height="300">
+                    </div>
+                        
+                        <div class="mySlides fade">
+                      <div class="numbertext">5 / 7</div>
+                      <img src="sajt/izvor/1.jpg" alt="Brvnara Izvor" width="400" height="300">
+                    </div>
+                        
+                        <div class="mySlides fade">
+                      <div class="numbertext">6 / 7</div>
+                    <img src="sajt/izvor/1.jpg" alt="Brvnara Izvor" width="400" height="300">
+                    </div>
+
+                        <div class="mySlides fade">
+                      <div class="numbertext">7 / 7</div>
+                      <img src="sajt/cutura.jpg" alt="Brvnara Izvor" width="400" height="300">
+                    
+                    </div>
+                        
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                   </div>
+
+         <div class="column right" id="p1">  <p>
+            <b>Adresa:</b> <br>
+            Gotovac 51/a<br>
+            <br>
+            
+            <b> Telefon:</b> <br>
+            069633393
+        </p>
+        </div>
+        </div>
+        <div id="p2"> 
+        <p>Brvnara Izvor je kafana starogradskog tipa, koja odiše toplinom i porodičnom atmosferom.
+            Enterijer i sjajana usluga uvek ljubaznog osoblja prijaju gostima svih afiniteta. 
+            Tokom nedelje ovo je omiljeni restoran za celu porodicu i poslovne sastanke, 
+            dok petkom i subotom uživo nastupa “Izvor Acoustic” bend. Tada Brvnara Izvor 
+            postaje prava srpska kafana, a večeri provedene u njoj ostaju nezaboravne!
+        </p></div>
+      <form  action="" method="get">
+             Ime: <input type="text" name="name">
+            Email: <input type="text" name="email">
+             <br>
+           Komentar:<br>
+			<textarea rows="5" cols="60" name="comment" form="usrform" placeholder="Komentar"></textarea> 
+           <input type="submit" name="post" tabindex="5" value="Pošalji komentar" onclick="alert('Komentar poslat!')">
+     </form>
+         <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+   slides[slideIndex-1].style.display = "block";  
+   
+}
+</script>
+    </body>
+</html>

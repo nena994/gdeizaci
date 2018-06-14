@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gde izaci</title>
+        <meta charset="UTF-8">
+        <link href="stilStranice.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    <body>
+        <h1> Caffe Duo</h1>
+
+     <div class="row">
+                   <div class="column left" >
+                    <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 1 </div> 
+                      <img src="sajt/duo.jpg" alt="Caffe Duo" width="400" height="300">
+                  
+                    </div>
+      
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>  
+                   </div>
+                  
+         <div class="column right" id="p1">  <p>
+                   <b>Adresa:</b> <br>
+                   Trg Srpskih ratnika br.33<br>
+                   36 000 Kraljevo<br>
+                
+                   <b> Telefon:</b> <br>
+                   036 336 046 <br>
+                   064 290 5390
+               </p>
+                </div>
+            </div>
+
+               <div id="p2"> 
+               <p>Iako je naziv caffe Duo, možemo reći da ovaj kafić ima i više od dva lica. 
+                   Modernog enterijera, prijatne atmosfere, ljubaznog osoblja i kao takav, 
+                   Duo je idealan za dnevno ispijanje kafice i ugodne razgovore. Tokom vikenda,
+                   Duo se pretvara u mesto dobrog provoda, bendove koji sviraju domaću ali i 
+                   stranu muziku i naravno, nezaobilazni domaći i strani rokenrol. Česti su gosti 
+                   bendovi iz drugih gradova pa je svaki vikend drugačiji od prethodnog. U bašti ili 
+                   u samom kafiću, preko dana ili tokom vikenda, sasvim je svejedno, prijatni trenuci 
+                   koje ćete doživeti učiniće da vam Duo postane omiljeno mesto u gradu.
+               </p>
+               </div>
+                <form  action="" method="get">
+             Ime: <input type="text" name="name">
+            Email: <input type="text" name="email">
+             <br>
+           Komentar:<br>
+			<textarea rows="5" cols="60" name="comment" form="usrform" placeholder="Komentar"></textarea> 
+           <input type="submit" name="post" tabindex="5" value="Pošalji komentar" onclick="alert('Komentar poslat!')">
+     </form>
+         <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+   slides[slideIndex-1].style.display = "block";  
+   
+}
+</script>
+     </body>
+</html>

@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31.05.2018., 13.57.41
+    Author     : Nevena
+*/
+body{
+    
+    padding: 6px;
+    overflow: hidden;
+    width:799px;
+}
+#centar img{
+    border-radius: 4px;
+     display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+   margin-bottom:3px;
+   
+ }
+
+ #centar{
+     margin-left: auto;
+     margin-right: auto;
+ }
+.container {
+    position: relative;
+    width: 200px;
+    float: left;
+    padding: 10px;
+    
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 200px;
+  height: 200px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: 1px solid #ddd;
+    border-radius: 4px;
+    
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #666;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.middle a{
+    text-decoration: none;
+    }
+    
+ #blok1{
+         text-align: center; 
+         
+ }
+ 
+ #blok1 img{
+     border-radius: 8px;
+     
+ }

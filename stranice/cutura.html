@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gde izaci</title>
+        <meta charset="UTF-8">
+        <link href="stilStranice.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    <body>
+        <h1> Čutura</h1>
+         <div class="row">
+                   <div class="column left" >
+           
+                    <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 7 </div>
+                      <img src="sajt/cutura.jpg" alt="Cutura" width="400" height="300">
+                  
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 7</div>
+                      <img src="sajt/cutura/2.jpg" alt="Cutura" width="400" height="300">
+                     
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 7</div>
+                      <img src="sajt/cutura/3.jpg" alt="Cutura" width="400" height="300">
+                    
+                    </div>
+                    
+                        <div class="mySlides fade">
+                      <div class="numbertext">4 / 7</div>
+                      <img src="sajt/cutura/4.jpg" alt="Cutura" width="400" height="300">
+                    
+                    </div>
+                        
+                        <div class="mySlides fade">
+                      <div class="numbertext">5 / 7</div>
+                      <img src="sajt/cutura/5.jpg" alt="Cutura" width="400" height="300">
+                    
+                    </div>
+                        
+                        <div class="mySlides fade">
+                      <div class="numbertext">6 / 7</div>
+                      <img src="sajt/cutura/6.jpg" alt="Cutura" width="400" height="300">
+                    
+                    </div>
+
+                        <div class="mySlides fade">
+                      <div class="numbertext">7 / 7</div>
+                      <img src="sajt/cutura/7.jpg" alt="Cutura" width="400" height="300">
+                    
+                    </div>
+                        
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                   </div>
+      
+        
+           <div class="column right" id="p1">  <p>
+            <b>Adresa:</b> <br>
+            Dušana Popovića 72<br>
+            <br>
+            
+            <b> Telefon:</b> <br>
+            036 366 364 <br>
+            065 559 95 05
+        </p>
+      </div>
+              </div>
+        <div id="p2"> 
+        <p>Specifičnog enterijera, a na dva nivoa, Restoran Čutura je koncipiran 
+            tako da odgovori na sve zahteve pravih hedonista i gastronoma. 
+            Sa titulom etno restorana, Čutura je tu da pruži ono najbolje 
+            što naša nacionalna kuhinja može da pruži putniku namerniku. 
+            To nije sve, jer restoran Čutura još ima šta da ponudi, i to 
+            onima koji žele da se vikendom dobro provedu. Tako je tu muzika 
+            uživo za sve one koji vole dobro pesmu i dobro društvo. Prijatno.
+        </p></div>
+        
+         <form  action="" method="get">
+             Ime: <input type="text" name="name">
+            Email: <input type="text" name="email">
+             <br>
+           Komentar:<br>
+			<textarea rows="5" cols="60" name="comment" form="usrform" placeholder="Komentar"></textarea> 
+           <input type="submit" name="post" tabindex="5" value="Pošalji komentar" onclick="alert('Komentar poslat!')">
+     </form>
+  <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+   slides[slideIndex-1].style.display = "block";  
+   
+}
+</script>
+    </body>
+</html>

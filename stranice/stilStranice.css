@@ -1,0 +1,116 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.06.2018., 17.58.27
+    Author     : Nevena
+*/
+
+#p1{
+    border: 1px solid rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .4) ;
+    color: white;
+    width: 220px;
+    border-radius: 8px;
+    padding: 5px;
+    float: right;
+    margin-right: 5px;
+    }
+#p2{
+    float: left;
+    font-size: 14px;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;
+        overflow:hidden;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin-left: 2px;
+  height: 300px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+#sirina{
+    width: 450px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active :hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 350px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.column {
+    float: left;
+    padding: 10px;
+   }
+
+.column.right {
+    width: 40%;
+}
+
+.column.left {
+  width: 60%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

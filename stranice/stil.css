@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1142px;
+    background-image: url("sajt/sajtpoz.jpg");
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-image: url("sajt/naslovna.jpg");
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    height: 218px;
+    border-radius:8px;
+   
+}
+
+.column {
+    float: left;
+    padding: 10px;
+   }
+
+.column.right {
+    width: 30%;
+}
+
+.column.left {
+  width: 70%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+.footer a{
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+@media (max-width: 1142px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+a {
+	color: #333;
+}
+
+/* meni*/
+
+#nav {
+	margin: 0;
+        margin-top: 3px;
+	padding: 7px 6px 0;
+	line-height: 100%;
+	width: 100%;
+
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+
+	background: #8b8b8b; 
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#a9a9a9', endColorstr='#7a7a7a'); 
+	background: -moz-linear-gradient(top,  #a9a9a9,  #7a7a7a);
+
+	border: solid 3px #8b8b8b;
+        border-radius: 8px;
+}
+#nav li {
+	margin: 0 15px;
+	padding: 0 0 8px;
+	float: left;
+	position: relative;
+	list-style: none;
+        
+}
+
+#nav a {
+	font-weight: bold;
+	color: #e7e5e5;
+	text-decoration: none;
+	display: block;
+	padding:  8px 20px;
+	margin: 0;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+/* padajuci meni*/ 
+
+#nav .current a, #nav li:hover > a {
+	background: #d1d1d1; 
+	background: -moz-linear-gradient(top,  #ebebeb,  #a1a1a1); 
+
+	color: #444;
+	border-top: solid 1px #f8f8f8;
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
+        border-radius: 8px;
+}
+
+#nav ul li:hover a, #nav li:hover li a {
+	background: none;
+	border: none;
+	color: #666;
+	-moz-box-shadow: none;
+}
+#nav ul a:hover {
+	background: #0399d4 !important; 
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#04acec', endColorstr='#0186ba'); 
+	background: -moz-linear-gradient(top,  #04acec,  #0186ba) !important; 
+	color: #fff !important;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+#nav ul {
+	background: #ddd; 
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cfcfcf'); 
+	background: -moz-linear-gradient(top,  #fff,  #cfcfcf); 
+
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 185px;
+	position: absolute;
+	top: 35px;
+	left: 0;
+	border: solid 1px #b4b4b4;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+#nav li:hover > ul {
+	display: block;
+}
+
+#nav ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav ul a {
+	font-weight: normal;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .9);
+}
+
+
+#nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#nav {
+	display: inline-block;
+}
+
+html[xmlns] #nav {
+	display: block;
+}
+
+* html #nav {
+	height: 1%;
+}
+
+.column.right iframe{
+    border: none;
+    overflow:hidden; 
+    width:292px; 
+    margin: 10px 20px ;
+}
+
+iframe{
+    height:700px;
+    width:100%;
+    border:none; 
+    overflow:hidden;
+}
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.05.2018., 00.17.28
+    Author     : Nevena
+*/
+

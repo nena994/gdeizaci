@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gde izaci</title>
+        <meta charset="UTF-8">
+        <link href="stilStranice.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    <body>
+        <h1> Hag</h1>
+            
+        <div class="row">
+                   <div class="column left" >
+                    <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 10 </div>
+                      <img src="sajt/hag/1.jpg" alt="Hag" width="400" height="300">
+                  
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 10</div>
+                      <img src="sajt/hag/2.jpg" alt="Hag" width="400" height="300">
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 10</div>
+                    <img src="sajt/hag/3.jpg" alt="Hag" width="400" height="300"> </div>
+                    
+                        <div class="mySlides fade">
+                      <div class="numbertext">4 / 10</div>
+                      <img src="sajt/hag/4.jpg" alt="Hag" width="400" height="300"></div>
+                        
+                        <div class="mySlides fade">
+                      <div class="numbertext">5 / 10</div>
+                     <img src="sajt/hag/5.jpg" alt="Hag" width="400" height="300">
+                    </div>
+                        
+                        <div class="mySlides fade">
+                      <div class="numbertext">6 / 10</div>
+                    <img src="sajt/hag/6.jpg" alt="Hag" width="400" height="300">
+                        </div>
+
+                        <div class="mySlides fade">
+                      <div class="numbertext">7 / 10</div>
+                      <img src="sajt/hag/7.jpg" alt="Hag" width="400" height="300">
+                    </div>
+                         <div class="mySlides fade">
+                      <div class="numbertext">8 / 10</div>
+                      <img src="sajt/hag/8.jpg" alt="Hag" width="400" height="300">
+                    </div>
+                         <div class="mySlides fade">
+                      <div class="numbertext">9 / 10</div>
+                      <img src="sajt/hag/9.jpg" alt="Hag" width="400" height="300">
+                    </div>
+                         <div class="mySlides fade">
+                      <div class="numbertext">10 / 10</div>
+                      <img src="sajt/hag/10.jpg" alt="Hag" width="400" height="300">
+                    </div>
+                        
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                   </div>
+                           
+         <div class="column right" id="p1">  <p>
+            <b>Adresa:</b> <br>
+            Miloša Velikog 62/2<br>
+            <br>
+            
+            <b> Telefon:</b> <br>
+            036 315 515 
+        </p>
+         </div>
+              </div>
+  
+        <div id="p2"> 
+        <p>Kao jedan od najstarijih kafića u gradu, sa radom počeo davne 1986. godine,
+            kafe Hag ima dugu tradiciju kojom se ponosi i koju je zaslužio. Preuzevši 
+            ime od najvećeg proizvođača kafe bez kofeina, Hag je poznat kao mesto gde se 
+            služi najbolja kafa, kao i najbolji voćni kupovi, ali nije samo to ono što čini 
+            Hag jednim od najboljih kafića u gradu. To je opuštena atmosfera koja vam pomaže 
+            da se opustite i koja svaku šoljicu kafe čini prijatnijiom. Sa dve otvorene bašte i
+            jednom zastakljenom, kafe Hag je tu da vam na duge staze i tokom cele godine pruži 
+            ono što zaslužujete.
+        </p></div>
+      <form  action="" method="get">
+             Ime: <input type="text" name="name">
+            Email: <input type="text" name="email">
+             <br>
+           Komentar:<br>
+			<textarea rows="5" cols="60" name="comment" form="usrform" placeholder="Komentar"></textarea> 
+           <input type="submit" name="post" tabindex="5" value="Pošalji komentar" onclick="alert('Komentar poslat!')">
+     </form>
+         <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+   slides[slideIndex-1].style.display = "block";  
+   
+}
+</script>
+    </body>
+</html>
