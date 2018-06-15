@@ -12,12 +12,13 @@ and open the template in the editor.
     border: 1px solid rgba(0, 0, 0, .4);
     background-color: rgba(0, 0, 0, .4) ;
     color: white;
-    width: 220px;
+    width: 200px;
     border-radius: 8px;
     padding: 5px;
     float: right;
     margin-right: 5px;
-    }
+    margin-top: 80px;
+        }
 #p2{
     float: left;
     font-size: 14px;

@@ -27,6 +27,7 @@ body {
 
 .column.right {
     width: 30%;
+    margin-top: 15px;
 }
 
 .column.left {
@@ -186,11 +187,11 @@ html[xmlns] #nav {
     border: none;
     overflow:hidden; 
     width:292px; 
-    margin: 10px 20px ;
+    margin: 10px 5px ;
 }
 
 iframe{
-    height:700px;
+    height: 750px;
     width:100%;
     border:none; 
     overflow:hidden;

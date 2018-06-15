@@ -9,4 +9,9 @@ and open the template in the editor.
 */
 
 
-
+h2{
+    font-style: italic;
+}
+textarea{
+    width: 600px;
+}
